@@ -11,3 +11,4 @@ npm-debug.log*
 
 # ⚙️ PM2 runtime
 pids/
+.env.local
