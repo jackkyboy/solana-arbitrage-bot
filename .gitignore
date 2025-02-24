@@ -1,0 +1,13 @@
+# 🔒 ซ่อนไฟล์ข้อมูลลับ
+.env
+
+# 🗑️ Node modules ไม่ต้องอัปโหลด
+node_modules/
+
+# 🚫 Log files
+logs/
+*.log
+npm-debug.log*
+
+# ⚙️ PM2 runtime
+pids/
