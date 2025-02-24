@@ -1,3 +1,4 @@
+// /Users/apichet/solana-arbitrage-bot/src/arbitrage.js
 const axios = require('axios');
 const { TRANSACTION_FEE } = require('./config');
 const { executeTrade } = require('./executeTrade');
@@ -15,7 +16,7 @@ const DELAY_BETWEEN_TRADES = 20000; // รอ 20 วินาที
 const MAX_TRADES_PER_HOUR = 2; // จำกัดครั้งเทรด
 const STOP_LOSS_THRESHOLD = 0.002; // 0.2% Stop-Loss
 
-const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1343425859612180511/hEsbQfSUe2cRnoWSF8oljQEwpxqH18zLiVgYV8nVWBWt5Q7KneHJvRL0KbArNQ1ev5bY'; // 🔗 ใส่ URL ให้ถูกต้อง
+const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL;
 
 // 🎯 ตัวแปรติดตามสถานะ
 let tradeCount = 0;
